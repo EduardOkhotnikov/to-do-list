@@ -12,6 +12,7 @@ html , body{
     margin: 0 auto;
     font-family: Arial, sans-serif;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    margin-top:10%;
     
 }
 
@@ -29,6 +30,16 @@ html , body{
     width: 15%;
     border: 1px solid black;
     font-size:25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#addToDo:hover{
+    background-color: #646060;
+    transition: 0.3s;
+}
+#addToDo:active{
+    background-color: #484545;
 }
 
 .to-dos{
@@ -39,13 +50,19 @@ html , body{
     margin: 0;
     cursor: pointer;
     font-style: 20px;
-    width: 50px;
+    width: 50%;
+    margin-top: 4px;
+    display: inline-flex;
 }
 
 .delete-styling{
     margin:0;
-    background-color: red;
+    background-image: url("img/trash-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 20px; 
     height: 20px;
     border-radius:50%;
+    cursor: pointer;
+    float: right;
 }

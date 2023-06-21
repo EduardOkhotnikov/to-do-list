@@ -3,8 +3,8 @@ let toDoContainer = document.getElementById('toDoContainer');
 let inputField = document.getElementById('inputField');
 
 function paragraphList () {
-    var paragraph = document.createElement('p');
-    var del = document.createElement('div');
+    let paragraph = document.createElement('p');
+    let del = document.createElement('div');
     del.classList.add('delete-styling');
     paragraph.classList.add('paragraph-styling');
     paragraph.innerText = inputField.value;
@@ -18,7 +18,7 @@ function paragraphList () {
         paragraph.remove();
         del.remove();
     })
-    del.addEventListener('dblclick' , function(){
+    del.addEventListener('click' , function(){
         paragraph.remove();
         del.remove();
     })
